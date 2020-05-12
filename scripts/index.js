@@ -610,36 +610,40 @@ canvas.height = H;
 
 document.addEventListener("touchmove", function(e) {
  if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
-        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-        mouse.x = touch.pageX;
-        mouse.y = touch.pageY;
+        //var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        mouse.x = e.touches[0].clientX;
+        mouse.y = e.touches[0].clientY;
     } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
-        mouse.x = e.clientX;
-        mouse.y = e.clientY;
+        mouse.x = e.pageX;
+        mouse.y = e.pageY;
     }
 }, false);
 
 document.addEventListener("touchstart", function(e) {
  if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
-        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-        mouse.x = touch.pageX;
-        mouse.y = touch.pageY;
+        //var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        mouse.x = e.touches[0].clientX;
+        mouse.y = e.touches[0].clientY;
     } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
-        mouse.x = e.clientX;
-        mouse.y = e.clientY;
+        mouse.x = e.pageX;
+        mouse.y = e.pageY;
     }
 }, false);
 
-document.addEventListener("mousemove", function(e) {
- if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
-        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-        mouse.x = touch.pageX;
-        mouse.y = touch.pageY;
-    } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
-        mouse.x = e.clientX;
-        mouse.y = e.clientY;
-    }
-}, false);
+
+
+
+
+// document.addEventListener("mousemove", function(e) {
+//  if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
+//         var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+//         mouse.x = touch.pageX;
+//         mouse.y = touch.pageY;
+//     } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
+//         mouse.x = e.clientX;
+//         mouse.y = e.clientY;
+//     }
+// }, false);
 
 // Particle Object
 var Particle = function() {
