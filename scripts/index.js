@@ -630,6 +630,17 @@ document.addEventListener("touchstart", function(e) {
     }
 }, false);
 
+document.addEventListener("mousemove", function(e) {
+ if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
+        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        mouse.x = touch.pageX;
+        mouse.y = touch.pageY;
+    } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+    }
+}, false);
+
 // Particle Object
 var Particle = function() {
   this.w = Math.random() * 10.5;
