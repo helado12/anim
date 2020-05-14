@@ -9,6 +9,30 @@
   <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
   <link rel="stylesheet" href="styles/system-fonts.css" media="all">
   <link rel="stylesheet" href="styles/style.css" media="all">
+
+  <script src="jquery-3.5.1.min.js"></script>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+<!--   <script src="popper.min.js"></script>
+  <script src="bootstrap.min.css" type="text/css"></script> -->
+
+  <script src="bootstrap.min.js"></script>
+
+
+<!-- <script>
+    $(document).ready(function(){
+        $("#homeVideo").modal('show');
+    });
+</script> -->
+
+
+
+
+
+
+
+
 </head>
 
 <body>
@@ -16,7 +40,7 @@
   <canvas id=c></canvas>
   <canvas id="confetti"></canvas>
   <div class="container" id="count">
-    <h1 id="head">Countdown to your birthday:</h1>
+    <h1 id="head">Counhttp://www.gossettmktg.com/video/dangot.pngtdown to your birthday:</h1>
     <ul>
       <li><span id="day"></span>days</li>
       <li><span id="hour"></span>hours</li>
@@ -32,7 +56,93 @@
       </div>
       <div class="box"></div>
     </div>
-</body>
+
+
+
+<div class="modal fade" id="homeVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <!--
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    -->
+    <video controls style=" width: 100%; height: auto; margin:0 auto; frameborder:0 ">
+          <source src="MINIONS - HAPPY BIRTHDAY - N'SYNC.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- <div class="modal-body">
+        
+      </div> -->
+     
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class="modal fade" id="homeVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="embed-responsive embed-responsive-16by9">
+      
+          <source src="MINIONS - HAPPY BIRTHDAY - N'SYNC.mp4" type="video/mp4">
+          
+          <object type="application/x-shockwave-flash" data="https://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="353" height="190">
+            <param name="movie" value="https://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+            <param name="allowFullScreen" value="true">   <param name="wmode" value="transparent">
+            
+          </object>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
+<!--
+
+<div class="modal fade" id="homeVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="btn btn-default" data-dismiss="modal" onclick="pauseVid()">X</button>
+      <div class="embed-responsive embed-responsive-16by9">
+        <video id="gossVideo" class="embed-responsive-item" controls="controls" poster="http://www.gossettmktg.com/video/dangot.png">
+          <source src="MINIONS - HAPPY BIRTHDAY - N'SYNC.mp4" type="video/mp4">
+          <source src="http://www.gossettmktg.com/video/dangot.webm" type="video/webm">
+          <source src="http://www.gossettmktg.com/video/dangot.ogv" type="video/ogg">
+          <object type="application/x-shockwave-flash" data="https://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="353" height="190">
+            <param name="movie" value="https://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+            <param name="allowFullScreen" value="true">   <param name="wmode" value="transparent">
+            <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fwww.gossettmktg.com%2Fvideo%2Fdangot.png',{'url':'http%3A%2F%2Fwww.gossettmktg.com%2Fvideo%2Fdangot.mp4','autoPlay':false}]}">
+            <img alt="Big Buck Bunny" src="http://www.gossettmktg.com/video/dangot.png" width="353" height="190" title="No video playback capabilities, please download the video below">
+          </object>
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+
+<!-- Home Video Modal -->
+
+
+
+
+
+
+
+
+
+
+
 <script src="scripts/confetti.min.js" charset="utf-8"></script>
 <script src="scripts/index.js" charset="utf-8"></script>
 

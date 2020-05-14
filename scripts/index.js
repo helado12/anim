@@ -449,6 +449,9 @@ var m1 = 0;
     //if (done === true) return 0;
     if (done === true){
         if (m1 === (sentences.length - 1)){
+          $("#homeVideo").modal('show');
+          
+
           return 0;
         }
         ++m1;
@@ -507,6 +510,8 @@ for (let m=0; m<opts.strings_1.length; ++m){
     let step = 1;
     let stepMinutes = [2000, 2000, 1000, 1000];
 
+    let homeVideo = document.getElementById('homeVideo');
+
     function init() {
 
       giftboxIn();
@@ -522,6 +527,8 @@ for (let m=0; m<opts.strings_1.length; ++m){
       //setTimeout(box.addEventListener('click', openBox, false), 20000);
       //setTimeout(box.addEventListener('click', showfireworks, false), 20000);
       setTimeout(addClickEvent, 3000);
+ 
+
 
     }
 
@@ -602,10 +609,10 @@ var W = window.innerWidth,
 canvas.width = W;
 canvas.height = H;
 
-// document.addEventListener("mousemove", function(e) {
-//   mouse.x = e.pageX;
-//   mouse.y = e.pageY;
-// }, false);
+document.addEventListener("mousemove", function(e) {
+  mouse.x = e.pageX;
+  mouse.y = e.pageY;
+}, false);
 
 
 document.addEventListener("touchmove", function(e) {
@@ -630,20 +637,6 @@ document.addEventListener("touchstart", function(e) {
     }
 }, false);
 
-
-
-
-
-// document.addEventListener("mousemove", function(e) {
-//  if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
-//         var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-//         mouse.x = touch.pageX;
-//         mouse.y = touch.pageY;
-//     } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
-//         mouse.x = e.clientX;
-//         mouse.y = e.clientY;
-//     }
-// }, false);
 
 // Particle Object
 var Particle = function() {

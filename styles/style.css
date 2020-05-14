@@ -38,6 +38,25 @@ li span {
   display: block;
   font-size: 4.5rem;
 }
+
+
+
+.modal-body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .merrywrap {
   position: absolute;
   right: 40px;
