@@ -11,6 +11,7 @@ canvas {
 
 #canvas1 {
   background: black;
+  width:100%;
 }
 
 body {
