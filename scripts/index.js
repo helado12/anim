@@ -462,6 +462,14 @@ var m1 = 0;
      //if (done) for (let l = 0; l < letters.length; ++l) letters[l].reset();
 }
 
+$('#homeVideo').on('hidden.bs.modal', function () {
+    //player.stopVideo();
+   // or jQuery
+   $(this).find('video')[0].pause();
+   // or remove video url
+   //$('playerID').attr('src', '');
+})
+
 
 
 
