@@ -71,7 +71,7 @@ li span {
   height: 200px;
   left: 50%;
   margin-left: -150px;
-  bottom: 750px;
+  bottom: 1700px;
   z-index: 10;
 }
 .giftbox > div {
@@ -220,7 +220,7 @@ li span {
       opacity: 1;
  }
   100% {
-      transform: translateY(750px);
+      transform: translateY(1700px);
       opacity: 1;
  }
 }
