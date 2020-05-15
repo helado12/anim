@@ -69,7 +69,7 @@ var Particle = function() {
   this.y = -H;
   this.free = false;
   
-  this.vy = (-5 + parseInt(Math.random() * 10) / 2)/1.7;
+  this.vy = (-5 + parseInt(Math.random() * 10) / 2)/1.2;
   this.vx = (-4 + parseInt(Math.random() * 8))/1.6;
   
   // Color
@@ -150,7 +150,7 @@ function update() {
       if(p.free == true) {
         ++count123;
         p.y += p.vy;
-        p.vy += 0.05;
+        p.vy += 0.1;
         p.x += p.vx;
         
         // Collision Detection
