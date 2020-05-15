@@ -9,7 +9,7 @@
     window.oRequestAnimationFrame      || 
     window.msRequestAnimationFrame     || 
     function( callback ){
-      window.setTimeout(callback, 1000 / 50);
+      window.setTimeout(callback, 1000 / 60);
     };
 })();
 
@@ -93,7 +93,7 @@ var particles = [];
 function drawText() {
   ctx1.clearRect(0, 0, W, H);
   ctx1.fillStyle = "#8800ff";
-  ctx1.font = "115px 'Arial', sans-serif";
+  ctx1.font = "100px 'Arial', sans-serif";
   ctx1.textAlign = "center";
   ctx1.fillText(keyword1, W/2, H/2 - 50);
   ctx1.fillText(keyword2, W/2, H/2 + 50);
@@ -217,11 +217,11 @@ function update1() {
 
 (function animloop(){
   
-   if (count123 > 10000000 && count123 < 20000000) {
+   if (count123 > 100000 && count123 < 200000) {
      requestAnimFrame(animloop);
      update1();   
    }
-   else if(count123 >= 20000000){
+   else if(count123 >= 200000){
       var meta = document.createElement('meta');
       meta.name = "viewport"
       meta.content = "width=device-width";
@@ -303,9 +303,9 @@ function showConfetti(){
     opts = {
       strings_1: [['HAPPY', 'BIRTHDAY!', config.name], ['生日快乐!'], ['愿所有的快乐'],['所有的幸福'],['都在你身边'], ['btw,', '遇见你我真的好开心！']],
 
-      charSize: 30,
-      charSpacing: 35,
-      lineHeight: 40,
+      charSize: 20,
+      charSpacing: 25,
+      lineHeight: 30,
 
       cx: w / 2,
       cy: h / 2,
@@ -731,7 +731,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
           opts.strings_1[m][i][j],
           j * opts.charSpacing +
             opts.charSpacing / 2 -
-            (opts.strings_1[m][i].length * opts.charSize) / 2,
+            (opts.strings_1[m][i].length * opts.charSize) / 2 -12,
           i * opts.lineHeight +
             opts.lineHeight / 2 -
             (opts.strings_1[m].length * opts.lineHeight) / 2,
