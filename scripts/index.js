@@ -586,7 +586,6 @@ for (let m=0; m<opts.strings_1.length; ++m){
     }
 
 
-
 // first animation
   window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       || 
@@ -601,9 +600,10 @@ for (let m=0; m<opts.strings_1.length; ++m){
 
 var canvas = document.getElementById("canvas1"),
     ctx1 = canvas.getContext("2d"),
-    keyword = "HAPPY BIRTHDAY APARNA",
+    keyword1 = "HAPPY BIRTHDAY",
+    keyword2 = "APARNA",
     imageData,
-    density =2,
+    density =1,
     mouse = {},
     hovered = false,
     colors = ["236, 252, 17", "15, 245, 46", "15, 237,  245", "245, 15, 15", "245, 15, 214"],
@@ -648,8 +648,8 @@ document.addEventListener("touchstart", function(e) {
 
 // Particle Object
 var Particle = function() {
-  this.w = Math.random() * 10.5;
-  this.h = Math.random() * 10.5;
+  this.w = Math.random() * 6.5;
+  this.h = Math.random() * 6.5;
   this.x = -W;
   this.y = -H;
   this.free = false;
@@ -678,9 +678,10 @@ var particles = [];
 function drawText() {
   ctx1.clearRect(0, 0, W, H);
   ctx1.fillStyle = "#8800ff";
-  ctx1.font = "100px 'Arial', sans-serif";
+  ctx1.font = "45px 'Arial', sans-serif";
   ctx1.textAlign = "center";
-  ctx1.fillText(keyword, W/2, H/2);
+  ctx1.fillText(keyword1, W/2, H/2 - 20);
+  ctx1.fillText(keyword2, W/2, H/2 + 50);
 }
 
 // Clear the canvas
@@ -821,7 +822,6 @@ function update1() {
 
   
   }
-
 
 
 
