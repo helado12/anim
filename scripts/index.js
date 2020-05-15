@@ -93,10 +93,10 @@ var particles = [];
 function drawText() {
   ctx1.clearRect(0, 0, W, H);
   ctx1.fillStyle = "#8800ff";
-  ctx1.font = "100px 'Arial', sans-serif";
+  ctx1.font = "115px 'Arial', sans-serif";
   ctx1.textAlign = "center";
-  ctx1.fillText(keyword1, W/2, H/2 - 30);
-  ctx1.fillText(keyword2, W/2, H/2 + 20);
+  ctx1.fillText(keyword1, W/2, H/2 - 50);
+  ctx1.fillText(keyword2, W/2, H/2 + 50);
 }
 
 // Clear the canvas
