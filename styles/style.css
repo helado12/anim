@@ -71,7 +71,7 @@ li span {
   height: 200px;
   left: 50%;
   margin-left: -150px;
-  bottom: 1700px;
+  bottom: 2000px;
   z-index: 10;
 }
 .giftbox > div {
@@ -181,7 +181,7 @@ li span {
 }
 
 .step-5 .giftbox {
-  animation: flyIn 3s ease-in forwards;
+  animation: flyIn 5s ease-in forwards;
 }
 
 .canvas2 {
