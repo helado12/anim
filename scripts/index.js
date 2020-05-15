@@ -63,8 +63,8 @@ document.addEventListener("touchstart", function(e) {
 
 // Particle Object
 var Particle = function() {
-  this.w = Math.random() * 10.5;
-  this.h = Math.random() * 10.5;
+  this.w = Math.random() * 12.5;
+  this.h = Math.random() * 12.5;
   this.x = -W;
   this.y = -H;
   this.free = false;
