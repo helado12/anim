@@ -150,7 +150,7 @@ function update() {
       if(p.free == true) {
         ++count123;
         p.y += p.vy;
-        p.vy += 0.1;
+        p.vy += 0.15;
         p.x += p.vx;
         
         // Collision Detection
