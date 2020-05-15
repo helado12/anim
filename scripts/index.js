@@ -9,7 +9,7 @@
     window.oRequestAnimationFrame      || 
     window.msRequestAnimationFrame     || 
     function( callback ){
-      window.setTimeout(callback, 1000 / 600);
+      window.setTimeout(callback, 1000 / 10);
     };
 })();
 
