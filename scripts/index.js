@@ -603,7 +603,7 @@ var canvas = document.getElementById("canvas1"),
     keyword1 = "HAPPY BIRTHDAY",
     keyword2 = "APARNA",
     imageData,
-    density =1,
+    density =2,
     mouse = {},
     hovered = false,
     colors = ["236, 252, 17", "15, 245, 46", "15, 237,  245", "245, 15, 15", "245, 15, 214"],
@@ -678,9 +678,9 @@ var particles = [];
 function drawText() {
   ctx1.clearRect(0, 0, W, H);
   ctx1.fillStyle = "#8800ff";
-  ctx1.font = "45px 'Arial', sans-serif";
+  ctx1.font = "100px 'Arial', sans-serif";
   ctx1.textAlign = "center";
-  ctx1.fillText(keyword1, W/2, H/2 - 20);
+  ctx1.fillText(keyword1, W/2, H/2 - 50);
   ctx1.fillText(keyword2, W/2, H/2 + 50);
 }
 
