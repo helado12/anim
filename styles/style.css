@@ -19,7 +19,7 @@ body {
   overflow: hidden;
 }
 
-
+/*
 #color {
   height: 30%;
   position: absolute;
@@ -29,7 +29,7 @@ body {
   background: #ee9ca7;
 }
 
-
+*/
 
 
 
@@ -249,18 +249,18 @@ li span {
 
 
 /*cake*/
-
+/*
 #cake {
   display: block;
   position: relative;
   bottom: -150px;
   margin: -10em auto 0 auto;
   z-index: 1;
-}
+}*/
 
 /* ============================================== Candle
 */
-
+/*
 .velas {
   background: #ffffff;
   border-radius: 10px;
@@ -291,12 +291,12 @@ li span {
 .velas:before {
   top: 45%;
   left: 0;
-}
+}*/
 
 /* ============================================== Fire
 */
 
-.fuego {
+/*.fuego {
   border-radius: 100%;
   position: absolute;
   top: -20px;
@@ -307,7 +307,7 @@ li span {
   background: rgba(254, 248, 97, 0.5);
   box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
 
-}
+}*/
 /*.fuego:nth-child(1) {
   animation: fuego 2s 6.5s infinite;
 }
@@ -327,7 +327,7 @@ li span {
 /* ============================================== Animation Fire
 */
 
-@keyframes fuego {
+/*@keyframes fuego {
   0%, 100% {
     background: rgba(254, 248, 97, 0.5);
     box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
@@ -346,5 +346,5 @@ li span {
   }
 }
 
-
+*/
 
