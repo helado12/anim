@@ -720,7 +720,7 @@ $('#homeVideo').on('hidden.bs.modal', function () {
    // or remove video url
    //$('playerID').attr('src', '');
    // buttonIn();
-   setTimeout(setButton, 200);
+   setTimeout(setButton, 500);
 
 
 
