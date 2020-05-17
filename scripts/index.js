@@ -25,7 +25,7 @@ var canvas = document.getElementById("canvas1"),
     hovered = false,
     colors = ["236, 252, 17", "15, 245, 46", "15, 237,  245", "245, 15, 15", "245, 15, 214"],
     minDist = 30,
-    bounceFactor = 4,
+    bounceFactor = 4.5,
     count123=0;
 
 var W = window.innerWidth,
@@ -954,7 +954,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function showfireworks() {
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
-      setTimeout(openModal, 56000)
+      setTimeout(openModal, 52000)
     }
 
     function changeColor(){

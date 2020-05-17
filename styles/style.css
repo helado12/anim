@@ -222,7 +222,7 @@ li span {
   animation: flyUp 1.5s ease-in forwards;
 }
 .step-2 .giftbox .box {
-  animation: flyDown 1.5s ease-in 0.05s forwards;
+  animation: flyDown 1.5s ease-in forwards;
 }
 
 .step-5 .giftbox {
