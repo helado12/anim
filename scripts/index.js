@@ -25,7 +25,7 @@ var canvas = document.getElementById("canvas1"),
     hovered = false,
     colors = ["236, 252, 17", "15, 245, 46", "15, 237,  245", "245, 15, 15", "245, 15, 214"],
     minDist = 30,
-    bounceFactor = 5
+    bounceFactor = 2
     count123=0;
 
 var W = window.innerWidth,
