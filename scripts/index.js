@@ -267,11 +267,11 @@ function checkParticle(){
 
 (function animloop(){
   
-   if (count123 > 10000000 && count123 < 15000000) {
+   if (count123 > 10000000 && count123 < 12500000) {
      requestAnimFrame(animloop);
      update1();   
    }
-   else if(count123 >= 15000000){
+   else if(count123 >= 12500000){
       if(checkParticle()){
 
 
@@ -954,7 +954,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function showfireworks() {
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
-      setTimeout(openModal, 45000)
+      setTimeout(openModal, 60000)
     }
 
     function changeColor(){
