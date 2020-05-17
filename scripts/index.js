@@ -25,7 +25,7 @@ var canvas = document.getElementById("canvas1"),
     hovered = false,
     colors = ["236, 252, 17", "15, 245, 46", "15, 237,  245", "245, 15, 15", "245, 15, 214"],
     minDist = 30,
-    bounceFactor = 4.5,
+    bounceFactor = 5,
     count123=0;
 
 var W = window.innerWidth,
@@ -72,7 +72,7 @@ var Particle = function() {
   this.free = false;
   
   this.vy = (-5 + parseInt(Math.random() * 10) / 2)/1.2;
-  this.vx = (-4 + parseInt(Math.random() * 8))/1.6;
+  this.vx = (-4 + parseInt(Math.random() * 8))/1.5;
   
   // Color
   this.a = Math.random();
@@ -152,7 +152,7 @@ function update() {
       if(p.free == true) {
         ++count123;
         p.y += p.vy;
-        p.vy += 0.15;
+        p.vy += 0.08;
         p.x += p.vx;
         
         // Collision Detection
