@@ -716,7 +716,42 @@ $('#homeVideo').on('hidden.bs.modal', function () {
    $(this).find('video')[0].pause();
    // or remove video url
    //$('playerID').attr('src', '');
+   // buttonIn();
+   // setTimeout(setButton, 5000);
+
+
+
 })
+
+
+let button1 = document.getElementById('one');
+let button2 = document.getElementById('second');
+let button3 = document.getElementById('third');
+
+
+
+function buttonIn() {   
+   button1.className = "one step-6";     
+   button2.className = "second step-7";    
+   button3.className = "third step-8";    
+    }
+
+function setButton() {
+  document.getElementById("one").style.opacity = 1;
+  document.getElementById("one").style.marginTop = "0px";
+  document.getElementById("second").style.opacity = 1;
+  document.getElementById("second").style.marginTop = "0px";
+  document.getElementById("third").style.opacity = 1;
+  document.getElementById("third").style.marginTop = "0px";
+  button1.className = "one";     
+  button2.className = "second";    
+  button3.className = "third"; 
+
+}
+
+buttonIn();
+   setTimeout(setButton, 10000);
+
 
 
 
