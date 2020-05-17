@@ -718,7 +718,7 @@ $('#homeVideo').on('hidden.bs.modal', function () {
    // or remove video url
    //$('playerID').attr('src', '');
    // buttonIn();
-   setTimeout(setButton, 2000);
+   setTimeout(setButton, 1000);
 
 
 
@@ -760,6 +760,9 @@ function setButton() {
 
 function openModal(){
   $("#homeVideo").modal('show');
+    document.getElementById("buttons").style.opacity = 0;
+
+
 
 }
 
@@ -884,7 +887,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function showfireworks() {
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
-      setTimeout(openModal, 40000)
+      setTimeout(openModal, 45000)
     }
 
     function changeColor(){
