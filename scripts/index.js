@@ -13,6 +13,8 @@
     };
 })();
 
+
+
 var canvas = document.getElementById("canvas1"),
     ctx1 = canvas.getContext("2d"),
     keyword1 = "HAPPY BIRTHDAY",
@@ -718,7 +720,7 @@ $('#homeVideo').on('hidden.bs.modal', function () {
    // or remove video url
    //$('playerID').attr('src', '');
    // buttonIn();
-   setTimeout(setButton, 1000);
+   setTimeout(setButton, 200);
 
 
 
