@@ -111,12 +111,13 @@ li span {
 }
 .giftbox {
   position: absolute;
-  width: 300px;
-  height: 200px;
+  width: 150px;
+  height: 100px;
   left: 50%;
-  margin-left: -150px;
-  bottom: 2000px;
+  margin-left: -75px;
+  bottom: 790px;
   z-index: 10;
+  opacity: 0;
 }
 .giftbox > div {
   background: #F64747;
@@ -135,7 +136,7 @@ li span {
   content: "Click Me!";
   left: 0;
   bottom: 0;
-  font-size: 24px;
+  font-size: 12px;
   text-align: center;
   transform: rotate(-20deg);
   transform-origin: 0 0;
@@ -151,16 +152,16 @@ li span {
   position: absolute;
   height: 100%;
   left: 50%;
-  width: 50px;
+  width: 25px;
   transform: translateX(-50%);
   background: #2C3E50;
 }
 .giftbox .cover > div {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
   left: 50%;
-  top: -50px;
+  top: -25px;
   transform: translateX(-50%);
 }
 .giftbox .cover > div:before, .giftbox .cover > div:after {
@@ -170,8 +171,8 @@ li span {
   width: 100%;
   height: 100%;
   content: "";
-  box-shadow: inset 0 0 0 15px #2C3E50;
-  border-radius: 30px;
+  box-shadow: inset 0 0 0 7.5px #2C3E50;
+  border-radius: 15px;
   transform-origin: 50% 100%;
 }
 .giftbox .cover > div:before {
@@ -187,7 +188,7 @@ li span {
   bottom: 0;
 }
 .giftbox .box:before {
-  width: 50px;
+  width: 25px;
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -195,7 +196,7 @@ li span {
 }
 .giftbox .box:after {
   width: 100%;
-  height: 30px;
+  height: 25px;
   background: rgba(0, 0, 0, 0);
 }
 .step-1 .giftbox {
@@ -218,18 +219,18 @@ li span {
   opacity: 0;
 }
 .step-2 .giftbox .cover {
-  animation: flyUp 2s ease-in forwards;
+  animation: flyUp 1.5s ease-in forwards;
 }
 .step-2 .giftbox .box {
-  animation: flyDown 2s ease-in 0.05s forwards;
+  animation: flyDown 1.5s ease-in 0.05s forwards;
 }
 
 .step-5 .giftbox {
-  animation: flyIn 5s ease-in forwards;
+  animation: flyIn 4.5s ease-in forwards;
 }
 
 .canvas2 {
-  animation: changeColor 2s ease-in forwards;
+  animation: changeColor 1s ease-in forwards;
 }
 
 
@@ -246,7 +247,7 @@ li span {
       opacity: 1;
  }
   100% {
-      transform: translateY(-1000px) rotate(20deg);
+      transform: translateY(-350px) translateX(50px) rotate(50deg);
       opacity: 0;
  }
 }
@@ -260,11 +261,11 @@ li span {
  }
 }
 @keyframes flyIn {
-  10% {
+  25% {
       opacity: 1;
  }
   100% {
-      transform: translateY(1700px);
+      transform: translateY(790px);
       opacity: 1;
  }
 }

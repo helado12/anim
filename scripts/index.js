@@ -215,20 +215,76 @@ function update1() {
   }
 }
 
+function update2() {
+  clear();
+  
+  for(i = 0; i < particles.length; i++) {
+    var p = particles[i];
+        
+
+        ++count123;
+        if(p.y + p.h > 2000) {
+          p.y += 10;
+        }else if(p.y < 0){
+          p.y -= 10;
+        }else{
+          p.y += 30;
+        }
+        
+        if(p.x + p.w > 2000) {
+          p.x += 10;
+        }else if(p.x < 0){
+          p.x -= 10;
+        }else{
+          p.x += p.vx;
+        }  
+    
+    
+    ctx1.globalCompositeOperation = "lighter";
+    p.draw();
+  }
+}
+
+function checkParticle(){
+  let done = true;
+  for(i = 0; i < particles.length; i++){
+    var p = particles[i];
+    // if(p.x + p.w > 0 && p.x - p.w < 500 && p.y + p.h > 0 && p.y - p.h < 1000){
+    //   done = false;
+    // }
+    if(p.x> 0 && p.x< 2000 && p.y> 0 && p.y< 2000){
+      done = false;
+    }
+
+    
+
+  }
+  return done;
+
+}
+
 //var count123 = 0
 
 (function animloop(){
   
-   if (count123 > 100000 && count123 < 200000) {
+   if (count123 > 10000000 && count123 < 15000000) {
      requestAnimFrame(animloop);
      update1();   
    }
-   else if(count123 >= 200000){
+   else if(count123 >= 15000000){
+      if(checkParticle()){
+
+
       var meta = document.createElement('meta');
       meta.name = "viewport"
       meta.content = "width=device-width";
       document.getElementsByTagName('head')[0].appendChild(meta);
       init1();
+       }else{
+            requestAnimFrame(animloop);
+            update2();
+
+       }
 
    }
    else{
@@ -836,15 +892,15 @@ for (let m=0; m<opts.strings_1.length; ++m){
 
       changeColor();
 
-      setTimeout(setMerrywrap, 10000);
+      setTimeout(setMerrywrap, 4500);
 
-      setTimeout(showConfetti, 2000);
+      setTimeout(showConfetti, 1000);
 
       //merrywrap.className = 'merrywrap';
 
       //setTimeout(box.addEventListener('click', openBox, false), 20000);
       //setTimeout(box.addEventListener('click', showfireworks, false), 20000);
-      setTimeout(addClickEvent, 3000);
+      setTimeout(addClickEvent, 4500);
  
 
 
@@ -859,11 +915,15 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function openBox() {
       if (step === 1) {
         box.removeEventListener('click', openBox, false);
+        setTimeout(removeShowFireworkClick, 500);
       }
       stepClass(step);
       if (step === 3) {
+        removeMerrywrap();
+
       }
       if (step === 4) {
+        
         return;
       }
       setTimeout(openBox, stepMinutes[step - 1]);
@@ -873,12 +933,17 @@ for (let m=0; m<opts.strings_1.length; ++m){
 
     function setMerrywrap() {
       document.getElementById("giftbox").style.bottom = 0;
+      document.getElementById("giftbox").style.opacity = 1;
       merrywrap.className = 'merrywrap';
     }
 
     function addClickEvent() {
       box.addEventListener('click', openBox, false);
       box.addEventListener('click', showfireworks, false);
+    }
+
+    function removeShowFireworkClick(){
+      box.removeEventListener('click', showfireworks, false);
     }
 
     function giftboxIn() {   
@@ -895,6 +960,11 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function changeColor(){
       let canvas1 = document.getElementById('canvas1');
       canvas1.className = 'canvas2';
+    }
+
+    function removeMerrywrap(){
+      merrywrap.remove();
+
     }
 
 
