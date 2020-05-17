@@ -25,7 +25,7 @@ var canvas = document.getElementById("canvas1"),
     hovered = false,
     colors = ["236, 252, 17", "15, 245, 46", "15, 237,  245", "245, 15, 15", "245, 15, 214"],
     minDist = 30,
-    bounceFactor = 2
+    bounceFactor = 3
     count123=0;
 
 var W = window.innerWidth,
@@ -892,7 +892,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
 
       changeColor();
 
-      setTimeout(setMerrywrap, 4500);
+      setTimeout(setMerrywrap, 300);
 
       setTimeout(showConfetti, 1000);
 
@@ -900,7 +900,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
 
       //setTimeout(box.addEventListener('click', openBox, false), 20000);
       //setTimeout(box.addEventListener('click', showfireworks, false), 20000);
-      setTimeout(addClickEvent, 4500);
+      setTimeout(addClickEvent, 3000);
  
 
 
@@ -954,7 +954,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function showfireworks() {
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
-      setTimeout(openModal, 60000)
+      setTimeout(openModal, 56000)
     }
 
     function changeColor(){
