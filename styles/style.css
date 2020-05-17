@@ -340,7 +340,7 @@ li span {
   left: 50%;
   margin-left: -75px;
   display:block;
-  margin-top: -1500px;
+  margin-top: -500px;
   opacity: 0;
 
   /*margin: 0 auto;*/
@@ -372,7 +372,7 @@ li span {
   top: 55%;
   left: 50%;
   margin-left: -75px;
-  margin-top: -1500px;
+  margin-top: -500px;
   opacity: 0;
 }
 
@@ -389,7 +389,7 @@ li span {
   top: 65%;
   left: 50%;
   margin-left: -75px;
-  margin-top: -1500px;
+  margin-top: -500px;
   opacity: 0;
 }
 
@@ -435,7 +435,7 @@ f1c40f
 
   100% {
       opacity: 1;
-      transform: translateY(1500px);
+      transform: translateY(500px);
  }
 }
 

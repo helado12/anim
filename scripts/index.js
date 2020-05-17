@@ -718,7 +718,8 @@ $('#homeVideo').on('hidden.bs.modal', function () {
    //$('playerID').attr('src', '');
    // buttonIn();
    // setTimeout(setButton, 5000);
-
+   buttonIn();
+setTimeout(setButton, 5000);
 
 
 })
@@ -749,8 +750,7 @@ function setButton() {
 
 }
 
-buttonIn();
-   setTimeout(setButton, 10000);
+
 
 
 
@@ -813,7 +813,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
 
       changeColor();
 
-      setTimeout(setMerrywrap, 3000);
+      setTimeout(setMerrywrap, 10000);
 
       setTimeout(showConfetti, 2000);
 
