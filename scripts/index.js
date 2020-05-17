@@ -892,7 +892,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
 
       changeColor();
 
-      setTimeout(setMerrywrap, 300);
+      setTimeout(setMerrywrap, 3000);
 
       setTimeout(showConfetti, 1000);
 
