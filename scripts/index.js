@@ -697,7 +697,7 @@ var m1 = 0;
     //if (done === true) return 0;
     if (done === true){
         if (m1 === (sentences.length - 1)){
-          $("#homeVideo").modal('show');
+          // $("#homeVideo").modal('toggle');
           
 
           return 0;
@@ -714,41 +714,59 @@ $('#homeVideo').on('hidden.bs.modal', function () {
     //player.stopVideo();
    // or jQuery
    $(this).find('video')[0].pause();
+
    // or remove video url
    //$('playerID').attr('src', '');
    // buttonIn();
-   // setTimeout(setButton, 5000);
-   buttonIn();
-setTimeout(setButton, 5000);
+   setTimeout(setButton, 2000);
+
+
 
 
 })
-
+   
 
 let button1 = document.getElementById('one');
 let button2 = document.getElementById('second');
 let button3 = document.getElementById('third');
+let buttons = document.getElementById('buttons');
 
 
 
-function buttonIn() {   
-   button1.className = "one step-6";     
-   button2.className = "second step-7";    
-   button3.className = "third step-8";    
-    }
+// function buttonIn() {   
+//    buttons.className = "buttons step-6";   
+//     }
 
 function setButton() {
-  document.getElementById("one").style.opacity = 1;
-  document.getElementById("one").style.marginTop = "0px";
-  document.getElementById("second").style.opacity = 1;
-  document.getElementById("second").style.marginTop = "0px";
-  document.getElementById("third").style.opacity = 1;
-  document.getElementById("third").style.marginTop = "0px";
-  button1.className = "one";     
-  button2.className = "second";    
-  button3.className = "third"; 
+  // document.getElementById("one").style.opacity = 1;
+  // document.getElementById("one").style.marginTop = "0px";
+  // document.getElementById("second").style.opacity = 1;
+  // document.getElementById("second").style.marginTop = "0px";
+  // document.getElementById("third").style.opacity = 1;
+  // document.getElementById("third").style.marginTop = "0px";
+  document.getElementById("one").style.pointerEvents = "auto";
+  document.getElementById("second").style.pointerEvents = "auto";
+  document.getElementById("third").style.pointerEvents = "auto";
+ document.getElementById("buttons").style.bottom = 0;
+  document.getElementById("buttons").style.opacity = 1;
+  buttons.className = "buttons";
+  button1.addEventListener('click', openModal, false)
+  button3.addEventListener('click', message, false)
+  
 
 }
+
+// buttonIn();
+
+function openModal(){
+  $("#homeVideo").modal('show');
+
+}
+
+function message(){
+  window.alert("已经准备好了，可以寄给你，或者放在pigeon hole哈哈哈")
+}
+   
 
 
 
@@ -866,6 +884,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function showfireworks() {
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
+      setTimeout(openModal, 40000)
     }
 
     function changeColor(){

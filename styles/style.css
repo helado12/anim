@@ -64,6 +64,10 @@ li span {
   margin: 0px;
 }
 
+.modal-backdrop{
+  z-index: 10;
+}
+
 
 
 
@@ -252,6 +256,7 @@ li span {
 
 .one {
   cursor: default;
+  pointer-events: none;
   margin: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -262,11 +267,13 @@ li span {
   -moz-transition: .3s;
   -o-transition: .3s;
   display: inline-block;
+  z-index: 30;
 
 }
 
 .second {
   cursor: default;
+  pointer-events: none;
   margin: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -277,11 +284,13 @@ li span {
   -moz-transition: .3s;
   -o-transition: .3s;
   display: inline-block;
+  z-index: 30;
 
 }
 
 .third {
   cursor: default;
+  pointer-events: none;
   margin: 10px;
   border-radius: 5px;
   text-decoration: none;
@@ -292,6 +301,7 @@ li span {
   -moz-transition: .3s;
   -o-transition: .3s;
   display: inline-block;
+  z-index: 30;
 
 }
 
@@ -340,8 +350,7 @@ li span {
   left: 50%;
   margin-left: -75px;
   display:block;
-  margin-top: -500px;
-  opacity: 0;
+  
 
   /*margin: 0 auto;*/
   /*left: 50%;*/
@@ -372,8 +381,7 @@ li span {
   top: 55%;
   left: 50%;
   margin-left: -75px;
-  margin-top: -500px;
-  opacity: 0;
+  
 }
 
 #second:hover {
@@ -389,8 +397,7 @@ li span {
   top: 65%;
   left: 50%;
   margin-left: -75px;
-  margin-top: -500px;
-  opacity: 0;
+  
 }
 
 #third:hover {
@@ -404,17 +411,18 @@ f1c40f
 
 9b59b6*/
 
-#buttons {
+.buttons {
   padding-top: 30px;
   text-align: center;
-  
-
-
-
+  position: absolute;
+  bottom: 30px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
   
 }
 
-.step-6 .one{
+/*.step-6 .one{
   animation: buttonappear 5s ease-out forwards;
 }
 
@@ -425,22 +433,25 @@ f1c40f
 .step-8 .third{
   animation: buttonappear 5s ease-out forwards;
 }
+*/
 
-
+.step-6 .buttons{
+  animation: buttonappear 5s ease-out forwards;
+}
 
 
 @keyframes buttonappear {
-  0%{
+  20%{
     opacity: 0;
   }
 
   100% {
       opacity: 1;
-      transform: translateY(500px);
+      
  }
 }
 
-/*cake*/
+/*cake
 /*
 #cake {
   display: block;
