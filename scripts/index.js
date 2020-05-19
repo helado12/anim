@@ -22,7 +22,7 @@ var canvas = document.getElementById("canvas1"),
     hovered = false,
     colors = ["236, 252, 17", "15, 245, 46", "15, 237,  245", "245, 15, 15", "245, 15, 214"],
     minDist = 20,
-    bounceFactor = 3.5,
+    bounceFactor = 4,
     count123=0;
 
 var W = window.innerWidth,
@@ -149,7 +149,7 @@ function update() {
       if(p.free == true) {
         ++count123;
         p.y += p.vy;
-        p.vy += 0.06;
+        p.vy += 0.04;
         p.x += p.vx;
         
         // Collision Detection
@@ -213,10 +213,10 @@ function update1() {
         p.x += p.vx;
         
         
-        if(p.x + p.w > W) {
-          p.x = (W - p.w); 
-          p.vx *= -Math.floor(Math.random() * bounceFactor); ;
-        }
+        // if(p.x + p.w > W) {
+        //   p.x = (W - p.w); 
+        //   p.vx *= -Math.floor(Math.random() * bounceFactor * 5); ;
+        // }
 
         
         if(p.x < 0) {
@@ -253,7 +253,7 @@ function update2() {
         }else if(p.x < 0){
           p.x -= 30;
         }else{
-          p.x += Math.floor(Math.random() * p.vx * 5);
+          p.x += Math.floor(Math.random() * p.vx * 10);  ;
         }  
 
     
