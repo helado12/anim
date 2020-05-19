@@ -1084,8 +1084,9 @@ $('#homeVideo').on('hidden.bs.modal', function () {
    //$('playerID').attr('src', '');
    // buttonIn();
    setTimeout(setButton, 100);
-
-
+   setTimeout(imageIn, 100);
+   setTimeout(setImage, 1000);
+   setVideoClose2();
 
 
 })
@@ -1126,16 +1127,37 @@ function setButton() {
 function openModal(){
   $("#homeVideo").modal('show');
     document.getElementById("buttons").style.opacity = 0;
-
-
-
+    document.getElementById("birthdayimage").style.opacity = 0;
 }
 
 function message(){
   window.alert("已经准备好了，可以寄给你，或者放在pigeon hole哈哈哈")
 }
-   
 
+let birthdayImage = document.getElementById('birthdayimage');
+
+function imageIn(){
+  birthdayImage.className = 'step-7 birthdayimage';
+}
+
+function setImage(){
+
+  document.getElementById("birthdayimage").style.opacity = "1";
+  birthdayImage.className = "birthdayimage";
+
+}
+
+function setVideoClose1(){
+
+  document.getElementById("videoclose").style.opacity = "1";
+
+}
+
+function setVideoClose2(){
+
+  document.getElementById("videoclose").style.opacity = "0";
+
+}
 
 
 
@@ -1261,7 +1283,9 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function showfireworks() {
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
-      setTimeout(openModal, 54000)
+      setTimeout(openModal, 54000);
+      setTimeout(setVideoClose1, 59000);
+      setTimeout(setVideoClose2, 70000);
     }
 
     function changeColor(){

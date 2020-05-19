@@ -100,8 +100,6 @@ li span {
 
 
 
-
-
 .merrywrap {
   position: absolute;
   right: 40px;
@@ -133,7 +131,7 @@ li span {
   position: absolute;
   color: #fff;
   width: 100%;
-  content: "Click Me!";
+  content: "点我哦!";
   left: 0;
   bottom: 0;
   font-size: 12px;
@@ -480,6 +478,66 @@ f1c40f
       
  }
 }
+
+.birthdayimage{
+   position: absolute;
+  /* width: 331px;
+   height: 207px;*/
+   width: 360px;
+   height: 225px;
+   top: 40px;
+   left:50%;
+   margin-left: -181px;
+   z-index: 20;
+   opacity:0;
+
+}
+
+.step-7 .birthdayimage{
+ animation: imageIn 1s ease-in forwards;
+}
+
+#birthdayimage{
+
+  animation: wobble 2s linear infinite forwards;
+}
+
+
+
+@keyframes imageIn {
+  100% {
+      opacity: 1;
+ }
+}
+
+@keyframes wobble {
+  20% {
+      transform: rotate(2deg);
+ }
+  75% {
+      transform: rotate(-2deg);
+ }
+}
+
+
+.videoclose{
+  position: absolute;
+  font-family: Helvetica, sans-serif;
+  font-size: 45;
+  top: 135px;
+  text-align: center;
+  left: 50%;
+  margin-left: -87px;
+  color: #bfbfbf;
+  opacity: 0;
+}
+
+/*.step-8 .videoclose{
+
+
+}
+*/
+
 
 /*cake
 /*
