@@ -1286,7 +1286,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
       setTimeout(anim, 1500);
       setTimeout(openModal, 54000);
       setTimeout(setVideoClose1, 70000);
-      setTimeout(setVideoClose2, 90000);
+      setTimeout(setVideoClose2, 80000);
     }
 
     function changeColor(){
