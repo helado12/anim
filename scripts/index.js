@@ -182,17 +182,18 @@ function update() {
 }
 
 //update1
-var updateTime = 0;
+
 
 
 function update1() {
   clear();
   
-  // if (updateTime === 0){
+  // if (updateTime < 10000){
   //   for(i = 0; i < particles.length; i++) {
   //     var p = particles[i];
   //     if (p.y < 0){
-  //       p.y = Math.floor(Math.random() * p.y * 20);
+  //       p.x = p.x + 10 - Math.floor(Math.random() * 20);
+  //       p.y = p.y + 10 - Math.floor(Math.random() * 20);
   //     }
 
 
@@ -207,33 +208,60 @@ function update1() {
     var p = particles[i];
       
         ++count123;
-        p.vy = 10;
+        p.vy = 8;
         p.y += p.vy;
         // p.vy += 0.05;
         p.x += p.vx;
         
         
+        if(p.x + p.w > W) {
+          // p.x = (W - p.x); 
+          p.vx = - p.vx*2;
+          // p.vx *= -Math.floor(Math.random() * bounceFactor * 5); ;
+        }
+
+        
+        // if(p.x < -3) {
+        //   p.x = 0;
+        //   p.vx *= -0.7;
+        // }
+
+
         // if(p.x + p.w > W) {
-        //   p.x = (W - p.w); 
-        //   p.vx *= -Math.floor(Math.random() * bounceFactor * 5); ;
+        //   p.x = (W - p.x); 
+        //   p.vx = - p.vx;
+
         // }
 
         
-        if(p.x < 0) {
-          p.x = 0;
-          p.vx *= -0.5;
-        }
+        // if(p.x < 0) {
+        //   p.x = 0;
+        //   p.vx *= -0.7;
+        // }
+
+
       
     
     
     ctx1.globalCompositeOperation = "lighter";
     p.draw();
   }
-  // updateTime += 1;
+  updateTime += 1;
 }
+
+var updateTime = 0;
 
 function update2() {
   clear();
+
+    if (updateTime === 0){
+    for(i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      if (p.y < 0){
+        p.y *= Math.floor(Math.random() * 5);
+      }
+    }
+  }
   
   for(i = 0; i < particles.length; i++) {
     var p = particles[i];
@@ -245,7 +273,7 @@ function update2() {
         }else if(p.y < 0){
           p.y -= 30;
         }else{
-          p.y += 10;
+          p.y += 8;
         }
         
         if(p.x + p.w > W) {
@@ -253,7 +281,7 @@ function update2() {
         }else if(p.x < 0){
           p.x -= 30;
         }else{
-          p.x += Math.floor(Math.random() * p.vx * 10);  ;
+          p.x += Math.floor(Math.random() * p.vx * 2);  ;
         }  
 
     
