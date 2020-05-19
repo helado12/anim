@@ -184,24 +184,24 @@ function update() {
 //update1
 
 
-
+var updateTime = 0
 function update1() {
   clear();
   
-  // if (updateTime < 10000){
-  //   for(i = 0; i < particles.length; i++) {
-  //     var p = particles[i];
-  //     if (p.y < 0){
-  //       p.x = p.x + 10 - Math.floor(Math.random() * 20);
-  //       p.y = p.y + 10 - Math.floor(Math.random() * 20);
-  //     }
+  if (updateTime < 10000){
+    for(i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      if (p.y < 0){
+        p.x = p.x + 10 - Math.floor(Math.random() * 20);
+        p.y = p.y + 10 - Math.floor(Math.random() * 20);
+      }
 
 
 
-  //   }
+    }
 
 
-  // }
+  }
 
 
   for(i = 0; i < particles.length; i++) {
@@ -249,12 +249,12 @@ function update1() {
   updateTime += 1;
 }
 
-var updateTime = 0;
+var updateTime2 = 0;
 
 function update2() {
   clear();
 
-    if (updateTime === 0){
+    if (updateTime2 === 0){
     for(i = 0; i < particles.length; i++) {
       var p = particles[i];
       if (p.y < 0){
