@@ -1138,6 +1138,7 @@ let birthdayImage = document.getElementById('birthdayimage');
 
 function imageIn(){
   birthdayImage.className = 'step-7 birthdayimage';
+  birthdayImage.id = 'birthdayimage';
 }
 
 function setImage(){
@@ -1284,8 +1285,8 @@ for (let m=0; m<opts.strings_1.length; ++m){
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
       setTimeout(openModal, 54000);
-      setTimeout(setVideoClose1, 60000);
-      setTimeout(setVideoClose2, 75000);
+      setTimeout(setVideoClose1, 70000);
+      setTimeout(setVideoClose2, 90000);
     }
 
     function changeColor(){
