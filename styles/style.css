@@ -381,21 +381,14 @@ li span {
   
 }
 
-/*#one:hover {
-  color: #fff;
-  background-color: #e67e22;
-  text-decoration: none !important;
-
-}*/
-
-@media(hover: hover) and (pointer: fine) {
-    #one:hover {
+#one:hover {
   color: #fff;
   background-color: #e67e22;
   text-decoration: none !important;
 
 }
-}
+
+
 
 /*.purple {
   color: #9b59b6;
