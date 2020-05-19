@@ -230,7 +230,7 @@ li span {
 }
 
 .canvas2 {
-  animation: changeColor 1s ease-in forwards;
+  animation: changeColor 0.5s ease-in forwards;
 }
 
 
@@ -265,7 +265,7 @@ li span {
       opacity: 1;
  }
   100% {
-      transform: translateY(790px);
+      transform: translateY(735px);
       opacity: 1;
  }
 }
@@ -283,7 +283,7 @@ li span {
   pointer-events: none;
   margin: 10px;
   border-radius: 5px;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px;
   font-size: 10px;
   transition: .3s;
@@ -300,7 +300,7 @@ li span {
   pointer-events: none;
   margin: 10px;
   border-radius: 5px;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px;
   font-size: 10px;
   transition: .3s;
@@ -317,7 +317,7 @@ li span {
   pointer-events: none;
   margin: 10px;
   border-radius: 5px;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px;
   font-size: 10px;
   transition: .3s;
@@ -381,10 +381,20 @@ li span {
   
 }
 
-#one:hover {
+/*#one:hover {
   color: #fff;
   background-color: #e67e22;
+  text-decoration: none !important;
 
+}*/
+
+@media(hover: hover) and (pointer: fine) {
+    #one:hover {
+  color: #fff;
+  background-color: #e67e22;
+  text-decoration: none !important;
+
+}
 }
 
 /*.purple {
@@ -411,6 +421,7 @@ li span {
 #second:hover {
   color: #fff;
   background-color: #f1c40f;
+  text-decoration: none !important;
 }
 
 #third {
@@ -424,9 +435,11 @@ li span {
   
 }
 
+
 #third:hover {
   color: #fff;
   background-color: #9b59b6;
+  text-decoration: none !important;
 }
 
 /*e67e22

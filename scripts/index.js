@@ -12,7 +12,7 @@
 
 
 
-var canvas = document.getElementById("canvas"),
+var canvas = document.getElementById("canvas1"),
     ctx1 = canvas.getContext("2d"),
     keyword1 = "HAPPY BIRTHDAY",
     keyword2 = "APARNA",
@@ -92,7 +92,7 @@ var particles = [];
 function drawText() {
   ctx1.clearRect(0, 0, W, H);
   ctx1.fillStyle = "#8800ff";
-  ctx1.font = "45px 'Arial', sans-serif";
+  ctx1.font = "43.5px 'Arial', sans-serif";
   ctx1.textAlign = "center";
   ctx1.fillText(keyword1, W/2, H/2 - 30);
   ctx1.fillText(keyword2, W/2, H/2 + 15);
@@ -110,8 +110,8 @@ function positionParticles() {
   data = imageData.data;
   
   // Iterate each row and column
-  for (var i = 0; i < imageData.height*2; i += density) {
-    for (var j = 0; j < imageData.width*2; j += density) {
+  for (var i = 0; i < imageData.height; i += density) {
+    for (var j = 0; j < imageData.width; j += density) {
       
       // Get the color of the pixel
       var color = data[((j * ( imageData.width * 4)) + (i * 4)) - 1];
@@ -182,23 +182,42 @@ function update() {
 }
 
 //update1
+var updateTime = 0;
+
+
 function update1() {
   clear();
   
+  // if (updateTime === 0){
+  //   for(i = 0; i < particles.length; i++) {
+  //     var p = particles[i];
+  //     if (p.y < 0){
+  //       p.y = Math.floor(Math.random() * p.y * 20);
+  //     }
+
+
+
+  //   }
+
+
+  // }
+
+
   for(i = 0; i < particles.length; i++) {
     var p = particles[i];
       
         ++count123;
-        p.vy = 30;
+        p.vy = 10;
         p.y += p.vy;
-        p.vy += 0.05;
+        // p.vy += 0.05;
         p.x += p.vx;
         
         
         if(p.x + p.w > W) {
-          p.x = W - p.w;
-          p.vx *= -bounceFactor;
+          p.x = (W - p.w); 
+          p.vx *= -Math.floor(Math.random() * bounceFactor * 3); ;
         }
+
         
         if(p.x < 0) {
           p.x = 0;
@@ -210,6 +229,7 @@ function update1() {
     ctx1.globalCompositeOperation = "lighter";
     p.draw();
   }
+  // updateTime += 1;
 }
 
 function update2() {
@@ -220,22 +240,22 @@ function update2() {
         
 
         ++count123;
-        if(p.y + p.h > 2000) {
-          p.y += 10;
-        }else if(p.y < 0){
-          p.y -= 10;
-        }else{
+        if(p.y + p.h > H) {
           p.y += 30;
+        }else if(p.y < 0){
+          p.y -= 30;
+        }else{
+          p.y += 10;
         }
         
-        if(p.x + p.w > 2000) {
-          p.x += 10;
+        if(p.x + p.w > W) {
+          p.x += 30;
         }else if(p.x < 0){
-          p.x -= 10;
+          p.x -= 30;
         }else{
-          p.x += p.vx;
+          p.x += Math.floor(Math.random() * p.vx * 10);  ;
         }  
-    
+
     
     ctx1.globalCompositeOperation = "lighter";
     p.draw();
@@ -249,7 +269,7 @@ function checkParticle(){
     // if(p.x + p.w > 0 && p.x - p.w < 500 && p.y + p.h > 0 && p.y - p.h < 1000){
     //   done = false;
     // }
-    if(p.x> 0 && p.x< 2000 && p.y> 0 && p.y< 2000){
+    if(p.x> 0 && p.x< W && p.y> 0 && p.y< H){
       done = false;
     }
 
@@ -526,18 +546,18 @@ function checkParticle(){
 
 (function animloop(){
   
-   if (count123 > 10000000 && count123 < 12500000) {
+   if (count123 > 5000000 && count123 < 8000000) {
      requestAnimFrame(animloop);
      update1();   
    }
-   else if(count123 >= 12500000){
+   else if(count123 >= 8000000){
       if(checkParticle()){
 
 
-      var meta = document.createElement('meta');
-      meta.name = "viewport"
-      meta.content = "width=device-width";
-      document.getElementsByTagName('head')[0].appendChild(meta);
+      // var meta = document.createElement('meta');
+      // meta.name = "viewport"
+      // meta.content = "width=device-width";
+      // document.getElementsByTagName('head')[0].appendChild(meta);
       init1();
        }else{
             requestAnimFrame(animloop);
@@ -1035,7 +1055,7 @@ $('#homeVideo').on('hidden.bs.modal', function () {
    // or remove video url
    //$('playerID').attr('src', '');
    // buttonIn();
-   setTimeout(setButton, 500);
+   setTimeout(setButton, 100);
 
 
 
@@ -1153,7 +1173,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
 
       setTimeout(setMerrywrap, 3000);
 
-      setTimeout(showConfetti, 1000);
+      setTimeout(showConfetti, 500);
 
       //merrywrap.className = 'merrywrap';
 
@@ -1191,7 +1211,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
     }
 
     function setMerrywrap() {
-      document.getElementById("giftbox").style.bottom = 0;
+      document.getElementById("giftbox").style.bottom = "55px";
       document.getElementById("giftbox").style.opacity = 1;
       merrywrap.className = 'merrywrap';
     }
@@ -1213,7 +1233,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function showfireworks() {
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
-      setTimeout(openModal, 52000)
+      setTimeout(openModal, 54000)
     }
 
     function changeColor(){
