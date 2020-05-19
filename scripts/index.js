@@ -1127,14 +1127,14 @@ function setButton() {
 function openModal(){
   $("#homeVideo").modal('show');
     document.getElementById("buttons").style.opacity = 0;
-    document.getElementById("birthdayimage").style.opacity = 0;
+    document.getElementsByClassName("birthdayimage")[0].style.opacity = 0;
 }
 
 function message(){
   window.alert("已经准备好了，可以寄给你，或者放在pigeon hole哈哈哈")
 }
 
-let birthdayImage = document.getElementById('birthdayimage');
+let birthdayImage = document.getElementsByClassName('birthdayimage')[0];
 
 function imageIn(){
   birthdayImage.className = 'step-7 birthdayimage';
@@ -1143,7 +1143,7 @@ function imageIn(){
 
 function setImage(){
 
-  document.getElementById("birthdayimage").style.opacity = "1";
+  document.getElementsByClassName("birthdayimage")[0].style.opacity = "1";
   birthdayImage.className = "birthdayimage";
 
 }
