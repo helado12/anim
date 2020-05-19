@@ -188,20 +188,20 @@ var updateTime = 0
 function update1() {
   clear();
   
-  if (updateTime < 10000){
-    for(i = 0; i < particles.length; i++) {
-      var p = particles[i];
-      if (p.y < 0){
-        p.x = p.x + 10 - Math.floor(Math.random() * 20);
-        p.y = p.y + 10 - Math.floor(Math.random() * 20);
-      }
+  // if (updateTime < 10000){
+  //   for(i = 0; i < particles.length; i++) {
+  //     var p = particles[i];
+  //     if (p.y < 0){
+  //       p.x = p.x + 10 - Math.floor(Math.random() * 20);
+  //       p.y = p.y + 10 - Math.floor(Math.random() * 20);
+  //     }
 
 
 
-    }
+  //   }
 
 
-  }
+  // }
 
 
   for(i = 0; i < particles.length; i++) {
@@ -216,7 +216,7 @@ function update1() {
         
         if(p.x + p.w > W) {
           // p.x = (W - p.x); 
-          p.vx = - p.vx*2;
+          p.vx = - p.vx;
           // p.vx *= -Math.floor(Math.random() * bounceFactor * 5); ;
         }
 
@@ -254,14 +254,14 @@ var updateTime2 = 0;
 function update2() {
   clear();
 
-    if (updateTime2 === 0){
-    for(i = 0; i < particles.length; i++) {
-      var p = particles[i];
-      if (p.y < 0){
-        p.y *= Math.floor(Math.random() * 5);
-      }
-    }
-  }
+  //   if (updateTime2 === 0){
+  //   for(i = 0; i < particles.length; i++) {
+  //     var p = particles[i];
+  //     if (p.y < 0){
+  //       p.y *= Math.floor(Math.random() * 5);
+  //     }
+  //   }
+  // }
   
   for(i = 0; i < particles.length; i++) {
     var p = particles[i];
