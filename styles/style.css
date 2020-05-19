@@ -494,7 +494,7 @@ f1c40f
 }
 
 .step-7 .birthdayimage{
- animation: imageIn 1s ease-in forwards;
+ animation: imageIn 0.5s ease-in forwards;
 }
 
 #birthdayimage{

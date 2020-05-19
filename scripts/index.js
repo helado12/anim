@@ -15,7 +15,7 @@
 var canvas = document.getElementById("canvas1"),
     ctx1 = canvas.getContext("2d"),
     keyword1 = "HAPPY BIRTHDAY",
-    keyword2 = "APARNA",
+    keyword2 = "SHARICE",
     imageData,
     density =1,
     mouse = {},
@@ -1085,7 +1085,7 @@ $('#homeVideo').on('hidden.bs.modal', function () {
    // buttonIn();
    setTimeout(setButton, 100);
    setTimeout(imageIn, 100);
-   setTimeout(setImage, 1000);
+   setTimeout(setImage, 500);
    setVideoClose2();
 
 
