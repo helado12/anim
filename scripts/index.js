@@ -68,7 +68,7 @@ var Particle = function() {
   this.y = -H;
   this.free = false;
   
-  this.vy = (-5 + parseInt(Math.random() * 10) / 2)/2;
+  this.vy = (-5 + parseInt(Math.random() * 10) / 2)/2.3;
   this.vx = (-4 + parseInt(Math.random() * 8))/2.3;
   
   // Color
@@ -574,11 +574,11 @@ function checkParticle(){
 
 (function animloop(){
   
-   if (count123 > 5000000 && count123 < 8000000) {
+   if (count123 > 8000000 && count123 < 10000000) {
      requestAnimFrame(animloop);
      update1();   
    }
-   else if(count123 >= 8000000){
+   else if(count123 >= 10000000){
       if(checkParticle()){
 
 
@@ -1037,6 +1037,13 @@ function showConfetti(){
 var m1 = 0;
 
   function anim() {
+
+
+  	if (m1 === (sentences.length)){
+          // $("#homeVideo").modal('toggle');
+          openModal(); 
+          // return 0;
+    } else {  
     window.requestAnimationFrame(anim);
 
     ctx.fillStyle = '#fff';
@@ -1061,18 +1068,14 @@ var m1 = 0;
     ctx.translate(-hw, -hh); 
     //if (done === true) return 0;
     if (done === true){
-        if (m1 === (sentences.length - 1)){
-          // $("#homeVideo").modal('toggle');
-          
 
-          return 0;
-        }
         ++m1;
         
       }
     
     //ctx.translate(-hw, -hh);
      //if (done) for (let l = 0; l < letters.length; ++l) letters[l].reset();
+     }  
 }
 
 $('#homeVideo').on('hidden.bs.modal', function () {
@@ -1132,13 +1135,14 @@ function openModal(){
 
 function message(){
   window.alert("已经准备好了，可以寄给你，或者放在pigeon hole哈哈哈")
+  document
 }
 
 let birthdayImage = document.getElementsByClassName('birthdayimage')[0];
 
 function imageIn(){
   birthdayImage.className = 'step-7 birthdayimage';
-  birthdayImage.id = 'birthdayimage';
+  //birthdayImage.id = 'birthdayimage';
 }
 
 function setImage(){
@@ -1284,7 +1288,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
     function showfireworks() {
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
-      setTimeout(openModal, 54000);
+      // setTimeout(openModal, 55000);
       setTimeout(setVideoClose1, 70000);
       setTimeout(setVideoClose2, 80000);
     }
