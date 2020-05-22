@@ -1131,6 +1131,8 @@ function openModal(){
   $("#homeVideo").modal('show');
     document.getElementById("buttons").style.opacity = 0;
     document.getElementsByClassName("birthdayimage")[0].style.opacity = 0;
+    setTimeout(setVideoClose1, 180000);
+    setTimeout(setVideoClose2, 185000);
 }
 
 function message(){
@@ -1289,8 +1291,6 @@ for (let m=0; m<opts.strings_1.length; ++m){
       canvasC.style.display = 'initial';    
       setTimeout(anim, 1500);
       // setTimeout(openModal, 55000);
-      setTimeout(setVideoClose1, 70000);
-      setTimeout(setVideoClose2, 80000);
     }
 
     function changeColor(){

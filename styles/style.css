@@ -499,7 +499,7 @@ f1c40f
 
 #birthdayimage{
 
-  animation: wobble 2s linear infinite forwards;
+  animation: wobble 2s linear 2s forwards;
 }
 
 
