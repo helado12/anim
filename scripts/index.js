@@ -971,7 +971,7 @@ function showConfetti(){
           this.cy + this.dy + this.size
         );
 
-        if (this.cy + this.size < -hh || this.cx < -hw || this.cy > hw)
+        if (this.cy + this.size < -hh -20 || this.cx < -hw || this.cy > hw)
           this.phase = 'done';
       }
     }
@@ -1144,7 +1144,7 @@ let birthdayImage = document.getElementsByClassName('birthdayimage')[0];
 
 function imageIn(){
   birthdayImage.className = 'step-7 birthdayimage';
-  //birthdayImage.id = 'birthdayimage';
+  birthdayImage.id = 'birthdayimage';
 }
 
 function setImage(){
