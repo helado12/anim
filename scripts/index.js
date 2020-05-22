@@ -1131,8 +1131,8 @@ function openModal(){
   $("#homeVideo").modal('show');
     document.getElementById("buttons").style.opacity = 0;
     document.getElementsByClassName("birthdayimage")[0].style.opacity = 0;
-    setTimeout(setVideoClose1, 180000);
-    setTimeout(setVideoClose2, 185000);
+    setTimeout(setVideoClose1, 210000);
+    setTimeout(setVideoClose2, 215000);
 }
 
 function message(){
