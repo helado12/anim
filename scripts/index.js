@@ -1151,6 +1151,7 @@ function setImage(){
 
   document.getElementsByClassName("birthdayimage")[0].style.opacity = "1";
   birthdayImage.className = "birthdayimage";
+  birthdayImage.id = 'birthdayimage';
 
 }
 

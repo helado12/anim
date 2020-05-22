@@ -499,8 +499,8 @@ f1c40f
 
 #birthdayimage{
 
-  animation: wobble 1.5s linear forwards;
-  animation-duration: 5s;
+  animation: wobble 2s linear forwards;
+  animation-iteration-count: 5;
 }
 
 
