@@ -493,6 +493,15 @@ f1c40f
 
 }
 
+.birthdayimagediv{
+ position: absolute;
+ width: 100%;
+ height:100%;
+
+
+
+}
+
 .step-7 .birthdayimage{
  animation: imageIn 0.1s ease-in forwards;
 }
