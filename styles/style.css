@@ -366,11 +366,11 @@ li span {
 #one {
   color: #e67e22;
   border: 2px #e67e22 solid;
-  width: 160px;
+  width: 190px;
   position: absolute;
   top: 45%;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -90px;
   display:block;
   
 
@@ -401,11 +401,11 @@ li span {
 #second {
   color: #f1c40f;
   border: 2px #f1c40f solid;
-  width: 160px;
+  width: 190px;
   position: absolute;
   top: 55%;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -90px;
   
 }
 
@@ -419,10 +419,10 @@ li span {
   color: #9b59b6;
   border: 2px #9b59b6 solid;
   position: absolute;
-  width: 160px;
+  width: 190px;
   top: 65%;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -90px;
   
 }
 

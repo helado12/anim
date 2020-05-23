@@ -22,7 +22,7 @@ var canvas = document.getElementById("canvas1"),
     hovered = false,
     colors = ["236, 252, 17", "15, 245, 46", "15, 237,  245", "245, 15, 15", "245, 15, 214"],
     minDist = 20,
-    bounceFactor = 4,
+    bounceFactor = 3.9,
     count123=0;
 
 var W = window.innerWidth,
@@ -68,8 +68,8 @@ var Particle = function() {
   this.y = -H;
   this.free = false;
   
-  this.vy = (-5 + parseInt(Math.random() * 10) / 2)/2.3;
-  this.vx = (-4 + parseInt(Math.random() * 8))/2.3;
+  this.vy = (-5 + parseInt(Math.random() * 10) / 2)/2.2;
+  this.vx = (-4 + parseInt(Math.random() * 8))/2.6;
   
   // Color
   this.a = Math.random();
@@ -574,11 +574,11 @@ function checkParticle(){
 
 (function animloop(){
   
-   if (count123 > 8000000 && count123 < 10000000) {
+   if (count123 > 8000000 && count123 < 9000000) {
      requestAnimFrame(animloop);
      update1();   
    }
-   else if(count123 >= 10000000){
+   else if(count123 >= 9000000){
       if(checkParticle()){
 
 
@@ -666,10 +666,10 @@ function showConfetti(){
     hw = w / 2, // half-width
     hh = h / 2,
     opts = {
-      strings_1: [['HAPPY', 'BIRTHDAY!', config.name], ['生日快乐!'], ['愿所有的快乐'],['所有的幸福'],['都在你身边'], ['btw,', '遇见你我真的好开心！']],
-
+      //strings_1: [['生日快乐，','Sharice'], ['在新的一年里，','要开心，要勇敢，要快乐'], ['愿所有的幸福，温馨，好运..'],['都在你身边'], ['也不要忘了，你还有一个朋友一直会陪伴你'],['现在就让可爱的小黄人','来为你庆祝生日吧哈哈哈哈']],
+      strings_1: [['生日快乐!','Sharice'], ['但愿你的眼睛,','只看的到笑容'],['但愿你流下每一滴泪','都让人感动'],['但愿你以后每一个梦','不会一场空'],['还有,'],['不要忘了','有一个朋友会一直在你身边'],['现在就让可爱的小黄人,','来为你庆祝生日吧哈哈哈哈']],
       charSize: 20,
-      charSpacing: 25,
+      charSpacing: 22,
       lineHeight: 30,
 
       cx: w / 2,
