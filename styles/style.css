@@ -283,7 +283,7 @@ li span {
   border-radius: 5px;
   text-decoration: none !important;
   padding: 10px;
-  font-size: 10px;
+  font-size: 9px;
   transition: .3s;
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -300,7 +300,7 @@ li span {
   border-radius: 5px;
   text-decoration: none !important;
   padding: 10px;
-  font-size: 10px;
+  font-size: 9px;
   transition: .3s;
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -317,7 +317,7 @@ li span {
   border-radius: 5px;
   text-decoration: none !important;
   padding: 10px;
-  font-size: 10px;
+  font-size: 9px;
   transition: .3s;
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -366,11 +366,11 @@ li span {
 #one {
   color: #e67e22;
   border: 2px #e67e22 solid;
-  width: 190px;
+  width: 170px;
   position: absolute;
   top: 45%;
   left: 50%;
-  margin-left: -90px;
+  margin-left: -80px;
   display:block;
   
 
@@ -401,11 +401,11 @@ li span {
 #second {
   color: #f1c40f;
   border: 2px #f1c40f solid;
-  width: 190px;
+  width: 170px;
   position: absolute;
   top: 55%;
   left: 50%;
-  margin-left: -90px;
+  margin-left: -80px;
   
 }
 
@@ -419,10 +419,10 @@ li span {
   color: #9b59b6;
   border: 2px #9b59b6 solid;
   position: absolute;
-  width: 190px;
+  width: 170px;
   top: 65%;
   left: 50%;
-  margin-left: -90px;
+  margin-left: -80px;
   
 }
 
@@ -494,7 +494,7 @@ f1c40f
 }
 
 .step-7 .birthdayimage{
- animation: imageIn 0.5s ease-in forwards;
+ animation: imageIn 0.1s ease-in forwards;
 }
 
 #birthdayimage{
@@ -528,7 +528,7 @@ f1c40f
   top: 135px;
   text-align: center;
   left: 50%;
-  margin-left: -87px;
+  margin-left: -126px;
   color: #bfbfbf;
   opacity: 0;
 }
