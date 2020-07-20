@@ -1,13 +1,13 @@
 # A cool birthday animation page to wish someone happy birthday or send as a gift🎁
 
-##It's cool & sweet
+## It's cool & sweet. It is reponsive and optimized for mobile devices.
 
 * URL: 
 * Technology used: 
 
 &nbsp;
 
-#### demo
+#### demo & explanation
 <img src="images/screenshot1.jpg" width="375" height="667">
 
 
@@ -15,9 +15,9 @@
 The first page is a happy birthday greeting made of shards. The shards will be animated when touching it.
 
 
-
 <img src="images/screenshot2.gif" width="375" height="667">
 
+The position of each shard is updated in each frame. In each loop, a value 'vy' will be added to a shard's y-position and 'vy' will also be added with a constant value. This makes the shards fall down the screen faster and faster. However, when it reaches the bottom of the screen, 'vy' is reset to an opposite sign and several times larger but still will be added with the constant value each frame, meaning the shard will probably first bounce up and out of the screen and  when it again fall down to the screen, it will have a large 'vy'. It will thus fall down quickly as shown below. 
 
 
 
