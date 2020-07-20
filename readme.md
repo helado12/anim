@@ -1,10 +1,40 @@
-#### birthday counter
+# A cool birthday animation page to wish someone happy birthday or send as a gift🎁
 
-A really simple and elegant looking birthday counter
+##It's cool & sweet
+
+* URL: 
+* Technology used: 
 
 &nbsp;
 
-#### demo (youtube)
+#### demo
+<img src="images/screenshot1.jpg" width="375" height="667">
+
+
+
+The first page is a happy birthday greeting made of shards. The shards will be animated when touching it.
+
+
+
+<img src="images/screenshot2.gif" width="375" height="667">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [![Birthday Countdown + Sweet Birthday Greeting with HTML, CSS & JS](http://img.youtube.com/vi/B-f1bxYaayc/0.jpg)](https://youtu.be/B-f1bxYaayc?t=53 'Birthday Countdown + Sweet Birthday Greeting with HTML, CSS & JS')
 
