@@ -131,7 +131,8 @@ li span {
   position: absolute;
   color: #fff;
   width: 100%;
-  content: "点我哦!";
+/*  content: "点我哦!";*/
+  content: "click me!";
   left: 0;
   bottom: 0;
   font-size: 12px;
