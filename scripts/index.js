@@ -670,13 +670,15 @@ function showConfetti(){
       //strings_1: [['生日快乐!','Sharice'], ['送你一句话哈哈'],[' 但愿你的眼睛, 只看得到笑容'],['但愿你流下每一滴泪,','都让人感动'],['但愿你以后每一个梦,','不会一场空'],['还有,'],['不要忘了','你有个朋友会一直陪伴你'],['现在,'],[' 就让小黄人,','为你庆祝生日吧哈哈哈哈']],
       //strings_1:[['生日快乐!','Sharice'],['今天有了你世界更精彩'], ['今天有了你星空更灿烂'],['今天因为你人间更温暖'], ['今天因为你,', '我觉得更幸福!'],['现在,'],[' 就让小黄人,','为你庆祝生日吧哈哈哈哈']],
       // strings_1: [['四季的风吹动了',' 岁月的风铃,'],['奏响为你生日祝福的歌'],['生日快乐!!', 'Sharice',], ['新的一岁里,','愿灿烂阳光照亮你所有的日子'], ['愿美丽的鲜花,','开遍你要走过的每个地方'],['新的一岁，','要开心,要快乐,要幸福'],[' 也请不要忘了,','有一个朋友一直都在你身边'],['现在,'],[' 就让小黄人..','为你庆祝生日吧哈哈哈哈']],
-      strings_1: [['四季的风吹动了',' 岁月的风铃,'],['奏响为你生日祝福的歌'],['生日快乐!!', 'Sharice',], ['新的一岁里,','愿灿烂阳光照亮你所有的日子'], ['愿美丽的鲜花,','开遍你要走过的每个地方'],['新的一岁，','要开心,要快乐,要幸福'],['现在,'],[' 就让小黄人..','为你庆祝生日吧哈哈哈哈']],
+      // strings_1: [['四季的风吹动了',' 岁月的风铃,'],['奏响为你生日祝福的歌'],['生日快乐!!', 'Sharice',], ['新的一岁里,','愿灿烂阳光照亮你所有的日子'], ['愿美丽的鲜花,','开遍你要走过的每个地方'],['新的一岁，','要开心,要快乐,要幸福'],['现在,'],[' 就让小黄人..','为你庆祝生日吧哈哈哈哈']],
+      // strings_1: [['四季的风吹动了',' 岁月的风铃,'],['奏响为你生日祝福的歌'],['生日快乐!!', 'Sharice',], ['新的一岁里,','愿灿烂阳光照亮你所有的日子'], ['愿美丽的鲜花,','开遍你要走过的每个地方'],['新的一岁，','要开心,要快乐,要幸福'],['现在,'],[' 就让小黄人..','为你庆祝生日吧哈哈哈哈']],
 //今天有了你世界更精彩，今天有了你星空更灿烂，今天因为你人间更温暖，今天因为你我觉得更幸福!祝你生日快乐!
       //用最激动的心情，编辑一条短信，在这个时刻为你送上，因为今天是你的生日，距离再远，也无法阻隔想要对你说，生日快乐。
-      
+      strings_1: [["Happy birthday!", "Sharice  "], ["   May all happiness,"], ["all luck"], [" always surround", "you "], ["  Now welcome the Minions,", "to celebrate", "your birthday hahaha"]],
 
       charSize: 20,
-      charSpacing: 22,
+      // charSpacing: 22,
+      charSpacing: 15,
       lineHeight: 30,
 
       cx: w / 2,
@@ -1179,6 +1181,28 @@ function setVideoClose2(){
 
 
 
+// var sentences = [];
+// for (let m=0; m<opts.strings_1.length; ++m){
+//   var letters = [];
+//   for (let i = 0; i < opts.strings_1[m].length; ++i) {
+//     for (let j = 0; j < opts.strings_1[m][i].length; ++j) {
+//       letters.push(
+//         new Letter(
+//           opts.strings_1[m][i][j],
+//           j * opts.charSpacing +
+//             opts.charSpacing / 2 -
+//             (opts.strings_1[m][i].length * opts.charSize) / 2 -12,
+//           i * opts.lineHeight +
+//             opts.lineHeight / 2 -
+//             (opts.strings_1[m].length * opts.lineHeight) / 2,
+//           m
+//         )
+//       );
+//     }
+//   }
+//   sentences.push(letters);
+// }
+
 var sentences = [];
 for (let m=0; m<opts.strings_1.length; ++m){
   var letters = [];
@@ -1189,7 +1213,7 @@ for (let m=0; m<opts.strings_1.length; ++m){
           opts.strings_1[m][i][j],
           j * opts.charSpacing +
             opts.charSpacing / 2 -
-            (opts.strings_1[m][i].length * opts.charSize) / 2 -12,
+            (opts.strings_1[m][i].length * opts.charSize) / 2 + 30,
           i * opts.lineHeight +
             opts.lineHeight / 2 -
             (opts.strings_1[m].length * opts.lineHeight) / 2,
