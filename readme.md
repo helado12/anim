@@ -2,19 +2,19 @@
 
 It's cool & sweet. It is reponsive and optimized for mobile devices.
 
-URL: 
+URL: `https://hhe233.github.io/birthday-touchscreen/`
 Technology used: 
 
 &nbsp;
 
 #### Demo & Explanation
-It shows each section of this website. I put this website together from various sources. A difficulty is how each section is connected smoothly and with proper timing which will be  explained in detail.
+It shows each section of this website. I put this website together from various sources. A difficulty is how each section is connected smoothly and with proper timing which will be explained in detail.
 
 <img src="images/screenshot1.jpg" width="375" height="667">
 
 
 
-The first section is a happy birthday greeting made of shards. The resolution and animation is optimized for viewing on handphone. The shards will be activated when touching it. A 'count' variable will be incremented by 1 when the postion of each shard is updated. This 'count' varible is used to control the timing of this animation.
+The first section is a happy birthday greeting made of shards. The resolution and animation is optimized for viewing on handphone. The shards is activated when touched. A 'count' variable will be incremented by 1 when the postion of each shard is updated. This 'count' varible is used to control the timing of this animation.
 
 
 <img src="images/screenshot2.gif" width="375" height="667">
@@ -39,13 +39,13 @@ When the 'count' variable reaches 8000000, the shards is mostly likely in the 'f
 
 
 
-The next section is a giftbox. When clicking it, birthday wishes in the form of fireworks will be shown one sentence each time.
+The next section is a giftbox. The animation for the giftbox is down using CSS animation. When clicking the giftbox, birthday wishes in the form of fireworks will be shown one sentence each time.
 The words can be edited in the 2D array `strings_1` in `scripts/index.js`.
 The alignment of the words can be adjusted by adding space into the string. There will not be any extra fireworks or ballon on top of the space.
 
 
 
-
+<img src="images/screenshot5.gif" width="375" height="667">
 
 
 
@@ -55,64 +55,20 @@ After all the sentences are looped through, a bootstrap modal containing a happy
 
 
 
+When the modal is closed, the last section will be shown. The last section contains a few buttons. The first one is used to call back the video modal and the section will be hidden until the modal is closed again. The second button is used to return to the first page. The last button will pop up some messages when clicked. Other functions can be added to these buttons. The animations for the banner and buttons are done using CSS animation.
+
+
+
+Hope you like it! ❤️
 
 
 
 
 
-
-[![Birthday Countdown + Sweet Birthday Greeting with HTML, CSS & JS](http://img.youtube.com/vi/B-f1bxYaayc/0.jpg)](https://youtu.be/B-f1bxYaayc?t=53 'Birthday Countdown + Sweet Birthday Greeting with HTML, CSS & JS')
-
-&nbsp;
-
-#### installation
-
-```sh
-git clone https://github.com/pavanjadhaw/birthday-counter
-```
-
-&nbsp;
-
-#### usage
-
-Edit config object in `scripts/index.js`
-replace name and birthdate
-
-```js
-6   const config = {
-7     birthdate: 'Jan 29, 2020',
-8     name: 'Darlene'
-9   };
-```
-
-&nbsp;
-
-#### deploying
-
-You can deploy it to many free hosting sites
-
-Deploying to [now.sh](https://zeit.co/home)
-
-```sh
-$ cd birthday-counter
-$ now
-```
-
-&nbsp;
-
-Deploying to [surge.sh](https://surge.sh/)
-
-```sh
-$ cd birthday-counter
-$ surge
-```
-
-&nbsp;
 
 #### acknowledgements
 
 Feel free to use any part of this! Contributions are welcome,
-I managed to put this together year ago when I didnt know any js or anything about programming/webdev in general.
 So thanks to all copepen which I copied, use few parts of.
 
 &nbsp;
