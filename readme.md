@@ -43,7 +43,7 @@ I put this page together from various sources. Will explain in detail how each s
 
 
 * `vy` is always added with the constant value each frame, so when the particle fall down again to the screen, it will have a large `vy`. It thus falls down quickly. 
-* When `count` reaches 8000000, all particles are set to fall down with constant 'vy'. 
+* When `count` reaches 8000000, all particles are set to fall down with constant `vy`. 
 * When `count` variable reaches 9000000, all particles will be set to move away from the screen.
 * When no particles are in the screen, the animation is terminated and next section will start.
 * *The switching from section 1 to 2 depends on the movement of the particles, not on the lapse of time, making it more repsonsive to user's action.*
