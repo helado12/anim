@@ -5,7 +5,7 @@ Edit a few words to make it yours.
 
 Download the files and click on the index.html file to view it in the browser.
 
-URL: https://hhe233.github.io/birthday-touchscreen/
+URL: https://eladoh.github.io/happy-birthday/
 
 Technology used:
  * HTML5, H5 canvas
@@ -16,7 +16,7 @@ Technology used:
 &nbsp;
 
 ## Demo
-I put this page together from various sources. Will explain in detail how each section are connected.
+I put this page together from various sources. Will explain in detail how each section is connected.
 
 ### Section 1
 <img src="images/screenshot1.jpg" width="375" height="667">
@@ -26,13 +26,13 @@ I put this page together from various sources. Will explain in detail how each s
 * The first section is a happy birthday greeting made of particles. 
 * Resolution is optimized for viewing on handphone. 
 * The particle is activated when touched. 
-* *A variable `count` is incremented by `1` when the postion of each particle is updated. It is used to control the timing of this section.*
+
 
 
 <img src="images/screenshot2.gif" width="375" height="667">
 
-* Position of each particle is updated in each frame. 
-* In each loop, a variable `vy` will be added to a shard's y-position and `vy` will also be added with a constant value. This makes the shards fall down the screen faster and faster. 
+* Position of each particle is updated in each frame. *A variable `count` is incremented by `1` when the postion of each particle is updated. It is used to control the timing of this section.*
+* In each frame, a variable `vy` (randomly initiated for each particle) will be added to each particle's y-position and `vy` will also be added with a constant value. This makes the particles fall down the screen faster and faster. 
 * When a particle reaches the bottom of the screen, its `vy` is reset to an opposite sign and several times larger. The particle will thus bounce up and out of the screen.
 
 
