@@ -58,7 +58,7 @@ I put this page together from various sources. Will explain in detail how each s
 
 
 * This section is a giftbox with confetii in the background. When clicking the giftbox, words will pop up one sentence at a time.
-* Write anything you want in the 2D array `strings_1` in `scripts/index.js`.
+* The words can be edited in the 2D array `strings_1` in `scripts/index.js`.
 * Alignment of the words can be adjusted by adding space to the string. There will not be any extra fireworks or ballon on top of the space.
 
 
