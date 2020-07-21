@@ -82,7 +82,7 @@ I put this page together from various sources. Will explain in detail how each s
 * The animations for the banner and buttons are done using CSS animation.
 
 ### Other idea
-When sending it to someone, use a customized domain name such as a.giftfor***.xyz for best effect:)
+Can use a customized domain name such as a.giftfor***.xyz when sending it to someone :)
 
 Hope you like it! ❤️
 
