@@ -39,7 +39,7 @@ I put this page together from various sources. Will explain in detail how each s
 
 
 
-* `vy` is still added with the constant value each frame. Thus when it again fall down to the screen, it will have a large `vy`. It thus falls down quickly. 
+* `vy` is always added with the constant value each frame. Thus when it again fall down to the screen, it will have a large `vy`. It thus falls down quickly. 
 * When `count` reaches 8000000, all particles are set to fall down with constant 'vy'. 
 * When `count` variable reaches 9000000, all particles will be set to move away from the screen.
 * When no particles are in the screen, the animation is terminated and next section will start.
@@ -81,12 +81,10 @@ I put this page together from various sources. Will explain in detail how each s
 * You can add other functions to these buttons if you wish. 
 * The animations for the banner and buttons are done using CSS animation.
 
-
+### Other idea
+When sending it to someone, use a customized domain name such as a.giftfor***.xyz for best effect:)
 
 Hope you like it! ❤️
-
-
-
 
 
 
