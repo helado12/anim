@@ -1,6 +1,6 @@
 # An animation page to wish someone happy birthday or send as a gift 🎁
 
-It's cool & sweet. It is reponsive and optimized for mobile devices.
+It's pretty cool. It is reponsive and optimized for mobile devices.
 
 URL: https://hhe233.github.io/birthday-touchscreen/
 
@@ -30,8 +30,7 @@ I put this page together from various sources. Will explain in detail how each s
 
 * Position of each particle is updated in each frame. 
 * In each loop, a variable `vy` will be added to a shard's y-position and `vy` will also be added with a constant value. This makes the shards fall down the screen faster and faster. 
-* However, when it reaches the bottom of the screen, `vy` is reset to an opposite sign and several times larger but still  be added with the constant value each frame, meaning the shard will first bounce up and out of the screen and when it again fall down to the screen, it will have a large `vy`. It will thus fall down quickly as shown below. 
-
+* When a particle reaches the bottom of the screen, its `vy` is reset to an opposite sign and several times larger. The particle will thus bounce up and out of the screen.
 
 
 
@@ -40,11 +39,17 @@ I put this page together from various sources. Will explain in detail how each s
 
 
 
-
+* `vy` is still added with the constant value each frame. Thus when it again fall down to the screen, it will have a large `vy`. It thus falls down quickly. 
 * When `count` reaches 8000000, all particles are set to fall down with constant 'vy'. 
 * When `count` variable reaches 9000000, all particles will be set to move away from the screen.
 * When no particles are in the screen, the animation is terminated and next section will start.
-* *The switching from section 1 to 2 thus depends on the movement of the particles, not on the lapse of time, making it more repsonsive to user's action.*
+* *The switching from section 1 to 2 depends on the movement of the particles, not on the lapse of time, making it more repsonsive to user's action.*
+
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 ### Section 2
 <img src="images/screenshot4.gif" width="375" height="667">
