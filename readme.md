@@ -1,25 +1,36 @@
-# A cool birthday animation page to wish someone happy birthday or send as a gift 🎁
+# A birthday animation site to wish someone happy birthday or send as a gift 🎁
 
 It's cool & sweet. It is reponsive and optimized for mobile devices.
 
 URL: https://hhe233.github.io/birthday-touchscreen/
-Technology used: 
+
+Technology used:
+ * HTML5, H5 canvas
+ * CSS3, CSS animation
+ * jQuery
+ * Bootstrap 4
 
 &nbsp;
 
-#### Demo & Explanation
-It shows each section of this website. I put this website together from various sources. A difficulty is how each section is connected smoothly and with proper timing which will be explained in detail.
+## Demo
+I put this page together from various sources. Will explain in detail how each section are connected.
 
+### Section 1
 <img src="images/screenshot1.jpg" width="375" height="667">
 
 
 
-The first section is a happy birthday greeting made of shards. The resolution and animation is optimized for viewing on handphone. The shards is activated when touched. A 'count' variable will be incremented by 1 when the postion of each shard is updated. This 'count' varible is used to control the timing of this animation.
+* The first section is a happy birthday greeting made of particles. 
+* Resolution is optimized for viewing on handphone. 
+* The particle is activated when touched. 
+* *A variable `count` is incremented by `1` when the postion of each particle is updated. It is used to control the timing of this section.*
 
 
 <img src="images/screenshot2.gif" width="375" height="667">
 
-The position of each shard is updated in each frame. In each loop, a value 'vy' will be added to a shard's y-position and 'vy' will also be added with a constant value. This makes the shards fall down the screen faster and faster. However, when it reaches the bottom of the screen, 'vy' is reset to an opposite sign and several times larger but still will be added with the constant value each frame, meaning the shard will probably first bounce up and out of the screen and  when it again fall down to the screen, it will have a large 'vy'. It will thus fall down quickly as shown below. 
+* Position of each particle is updated in each frame. 
+* In each loop, a variable `vy` will be added to a shard's y-position and `vy` will also be added with a constant value. This makes the shards fall down the screen faster and faster. 
+* However, when it reaches the bottom of the screen, `vy` is reset to an opposite sign and several times larger but still  be added with the constant value each frame, meaning the shard will first bounce up and out of the screen and when it again fall down to the screen, it will have a large `vy`. It will thus fall down quickly as shown below. 
 
 
 
@@ -30,18 +41,20 @@ The position of each shard is updated in each frame. In each loop, a value 'vy' 
 
 
 
-When the 'count' variable reaches 8000000, the shards is mostly likely in the 'falling down' phase. The shard is then set to fall down with constant 'vy'. When the 'count' variable reaches 9000000, all shards out of the screen will be prevented to enter the screen and it will be checked if there is any shards in the view of the screen in each frame. When no shards is in the screen, this animation is ended and the page will enter the next secition.
-### This way, the switching from section 1 to 2 would depend on the movement of the shard, not on the lapse of time, making it more repsonsive to the user's actions.
+* When `count` reaches 8000000, all particles are set to fall down with constant 'vy'. 
+* When `count` variable reaches 9000000, all particles will be set to move away from the screen.
+* When no particles are in the screen, the animation is terminated and next section will start.
+* *The switching from section 1 to 2 thus depends on the movement of the particles, not on the lapse of time, making it more repsonsive to user's action.*
 
-
+### Section 2
 <img src="images/screenshot4.gif" width="375" height="667">
 
 
 
 
-The next section is a giftbox. The animation for the giftbox is down using CSS animation. When clicking the giftbox, birthday wishes in the form of fireworks will be shown one sentence each time.
-The words can be edited in the 2D array `strings_1` in `scripts/index.js`.
-The alignment of the words can be adjusted by adding space into the string. There will not be any extra fireworks or ballon on top of the space.
+* This section is a giftbox with confetii in the background. When clicking the giftbox, words will pop up one sentence at a time.
+* Write anything you want in the 2D array `strings_1` in `scripts/index.js`.
+* Alignment of the words can be adjusted by adding space to the string. There will not be any extra fireworks or ballon on top of the space.
 
 
 
@@ -49,13 +62,19 @@ The alignment of the words can be adjusted by adding space into the string. Ther
 
 
 
-After all the sentences are looped through, a bootstrap modal containing a happy birthday video will pop up. The modal will be hidden and the video can be paused when clicking on the grey area. A reminder for this will be shown towards the end of the happy birthday video.
+* After all the sentences are looped through, a bootstrap modal containing a video will pop up. You can use any video you like.
+* The modal will be hidden and the video can be paused when clicking on the grey area. 
+* A reminder for this will be shown towards the end of the happy birthday video.
 
+### Section 3
 
 <img src="images/screenshot6.gif" width="375" height="667">
 
 
-When the modal is closed, the last section will be shown. The last section contains a few buttons. The first one is used to call back the video modal and the section will be hidden until the modal is closed again. The second button is used to return to the first page. The last button will pop up some messages when clicked. Other functions can be added to these buttons. The animations for the banner and buttons are done using CSS animation.
+* When the modal is closed, the last section will be shown. It contains a banner which moves for a few cycles and a few buttons.
+* The first one is used to call back the video modal and the section will be hidden until the modal is closed again. 
+* You can add other functions to these buttons if you wish. 
+* The animations for the banner and buttons are done using CSS animation.
 
 
 
@@ -66,10 +85,10 @@ Hope you like it! ❤️
 
 
 
-#### acknowledgements
+## acknowledgements
 
 Feel free to use any part of this! Contributions are welcome,
-&nbsp;
-So thanks to all copepen which I copied, use few parts of.
 
-&nbsp;
+Thanks to all copepen which I copied, use few parts of.
+
+
