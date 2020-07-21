@@ -34,15 +34,22 @@ When the 'count' variable reaches 8000000, the shards is mostly likely in the 'f
 ### This way, the switching from section 1 to 2 would depend on the movement of the shard, not on the lapse of time, making it more repsonsive to the user's actions.
 
 
+<img src="images/screenshot4.gif" width="375" height="667">
 
 
 
 
 The next section is a giftbox. When clicking it, birthday wishes in the form of fireworks will be shown one sentence each time.
-The words can be edit in the 2D array `strings_1` in `scripts/index.js`.
+The words can be edited in the 2D array `strings_1` in `scripts/index.js`.
+The alignment of the words can be adjusted by adding space into the string. There will not be any extra fireworks or ballon on top of the space.
 
 
 
+
+
+
+
+After all the sentences are looped through, a bootstrap modal containing a happy birthday video will pop up. The modal will be hidden and the video can be paused when clicking on the grey area. A reminder for this will be shown towards the end of the happy birthday video.
 
 
 
