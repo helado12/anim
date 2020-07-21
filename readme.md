@@ -1,4 +1,4 @@
-# A birthday animation site to wish someone happy birthday or send as a gift 🎁
+# An animation page to wish someone happy birthday or send as a gift 🎁
 
 It's cool & sweet. It is reponsive and optimized for mobile devices.
 
