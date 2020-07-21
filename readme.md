@@ -2,7 +2,7 @@
 
 It's cool & sweet. It is reponsive and optimized for mobile devices.
 
-URL: `https://hhe233.github.io/birthday-touchscreen/`
+URL: https://hhe233.github.io/birthday-touchscreen/
 Technology used: 
 
 &nbsp;
@@ -52,7 +52,7 @@ The alignment of the words can be adjusted by adding space into the string. Ther
 After all the sentences are looped through, a bootstrap modal containing a happy birthday video will pop up. The modal will be hidden and the video can be paused when clicking on the grey area. A reminder for this will be shown towards the end of the happy birthday video.
 
 
-
+<img src="images/screenshot6.gif" width="375" height="667">
 
 
 When the modal is closed, the last section will be shown. The last section contains a few buttons. The first one is used to call back the video modal and the section will be hidden until the modal is closed again. The second button is used to return to the first page. The last button will pop up some messages when clicked. Other functions can be added to these buttons. The animations for the banner and buttons are done using CSS animation.
@@ -69,6 +69,7 @@ Hope you like it! ❤️
 #### acknowledgements
 
 Feel free to use any part of this! Contributions are welcome,
+&nbsp;
 So thanks to all copepen which I copied, use few parts of.
 
 &nbsp;
