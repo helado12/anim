@@ -5,7 +5,7 @@ Edit a few words to make it yours.
 
 Download the files and click on the index.html file to view it in the browser.
 
-URL: https://eladoh.github.io/happy-birthday/
+URL: https://eladoh.github.io/birthday/
 
 Technology used:
  * HTML5, H5 canvas
