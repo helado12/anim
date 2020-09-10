@@ -87,14 +87,5 @@ I put this page together from various sources. Will explain in detail how each s
 ### Other idea
 Can use a customized domain name such as a.giftfor***.xyz when sending it to someone :)
 
-Hope you like it! ❤️
-
-
-
-## acknowledgements
-
-Feel free to use any part of this! Contributions are welcome,
-
-Thanks to all copepen which I copied, use few parts of.
-
+Do star it if you like.⭐️
 
