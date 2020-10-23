@@ -52,7 +52,7 @@ I put this page together from various sources. Will explain in detail how each s
 &nbsp;
 
 ### Section 2
-<img src="images/screenshot4.gif" width="375" height="667">
+
 
 
 
