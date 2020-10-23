@@ -19,7 +19,6 @@ Technology used:
 I put this page together from various sources. Will explain in detail how each section is connected.
 
 ### Section 1
-<img src="images/screenshot1.jpg" width="375" height="667">
 
 
 
@@ -28,8 +27,6 @@ I put this page together from various sources. Will explain in detail how each s
 * The particle is activated when touched. 
 
 
-
-<img src="images/screenshot2.gif" width="375" height="667">
 
 * Position of each particle is updated in each frame. *A variable `count` is incremented by `1` when the postion of each particle is updated. It is used to control the timing of this section.*
 * In each frame, a variable `vy` (randomly initiated for each particle) will be added to each particle's y-position and `vy` will also be added with a constant value. This makes the particles fall down the screen faster and faster. 
